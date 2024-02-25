@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    background: #081b29;
+    color: #ededed;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: #081b29;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #00abf0;
+}
+
+.servies {
+    text-align: center;
+    padding: 120px 0;
+}
+
+.servies h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #00abf0;
+    text-decoration: underline #ededed;
+    text-underline-offset: 9px;
+
+}
+
+.main-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #0a2532; /* Adding common background color */
+    border-radius: 3rem;
+    width: 90%; /* Adjust width as needed */
+    max-width: 1200px; /* Set maximum width */
+    margin: 0 auto; /* Center align */
+}
+
+.sub-div {
+    background-color: #a5caee;
+    border: 1px solid #ccc;
+    padding: 30px;
+    margin: 20px;
+    width: calc(33.33% - 40px);
+    box-shadow: 0 4px 10px rgb(135, 198, 240);
+    border-radius: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.sub-div:hover {
+    transform: translateY(-5px);
+}
+
+.sub-div {
+    width: 200px;
+    /* Adjust width as needed */
+    margin: 20px;
+    /* Adjust margin as needed */
+    overflow: hidden;
+    /* Ensure images don't overflow div */
+    
+}
+
+.sub-div img {
+    width: 100%;
+    /* Make the image fill its container */
+    height: auto;
+    /* Maintain aspect ratio */
+    display: block;
+    /* Ensure image doesn't inherit any extra spacing */
+    box-shadow: 0 8px 8px rgb(39, 69, 107); /* Adding shadow effect */
+}
+
+
+.sub-div h4 {
+    font-size: 1.2em; /* Adjust font size as needed */
+    margin-top: 10px; /* Add space between image and heading */
+    color: #081b29;
+  }
+  
+  .sub-div p {
+    font-size: 0.9em; /* Adjust font size as needed */
+    margin-top: 10px; /* Add space between heading and paragraph */
+    color: darkslategray;
+  }
+
+  
+
+  .btn-box a {
+    margin-top: 2rem;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #081b29;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #00abf0;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.btn-box a:hover {
+    color: #081b29;
+}
+
+
+.btn-box a::before {
+    background: #081b29;
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .sub-div {
+        width: calc(50% - 40px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sub-div {
+        width: calc(100% - 40px);
+    }
+}
